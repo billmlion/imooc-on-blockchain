@@ -66,3 +66,44 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+ex.:
+
+1.讲师创建课程，众筹目标1，众筹价格0.5，上限价1
+CEO：4.987328
+讲师：1
+购买者1:2
+购买者2:2
+购买者3:4
+
+课程状态：众筹中。。。
+
+2.购买者1，购买
+CEO：4.987328
+讲师：0.998771
+购买者1:1.499933
+购买者2:2
+购买者3:4
+
+课程状态：众筹中。。。
+
+3.购买者2，购买
+CEO：4.987328
+讲师：1.998771
+购买者1:1.499933
+购买者2:1.499916
+购买者3:4
+
+课程状态：已上线
+
+4.购买者3，购买
+CEO：5.087328
+讲师：2.9999
+购买者1:1.499933
+购买者2:1.499916
+购买者3:2.9999
+
+ //上之后购买
+ uint value = msg.value;
+ ceo.transfer(value/10);
+ owner.transfer(value-value/10);
