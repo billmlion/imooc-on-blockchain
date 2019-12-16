@@ -24,6 +24,9 @@ class HeadComp extends React.Component {
                     <Menu.Item key='/create'>
                         <Link to='/create'>我要众筹</Link>
                     </Menu.Item>
+                    <Menu.Item key='/goods'>
+                        <Link to='/goods'>商品列表</Link>
+                    </Menu.Item>
                 </Menu>
             </Header>
         )

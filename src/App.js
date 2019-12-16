@@ -6,10 +6,13 @@ import Header from './components/Header';
 import Create from './pages/Create';
 import Course from './pages/Course';
 import Detail from './pages/Detail';
+import Goods from './pages/Goods';
+import GoodsDetail from './pages/GoodsDetail';
 
 const { Footer, Sider, Content } = Layout;
 
 // const Course = () => <span>课程</span>
+// const Goods = () => <span>课程</span>
 const Qa = () => <span>问答区</span>
 
 
@@ -25,6 +28,8 @@ class App extends Component {
             <Route path="/qa"  component={Qa}></Route>
             <Route path="/create"  component={Create}></Route>
             <Route path="/detail/:address"  component={Detail}></Route>
+            <Route path="/goods"  component={Goods}></Route>
+            <Route path="/goodsdetail/:name"  component={GoodsDetail}></Route>
 
           </Content>
           <Footer>底部</Footer>
